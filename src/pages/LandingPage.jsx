@@ -1,13 +1,13 @@
 import { Header } from "../components/Header/Header"
 import { Testimonies } from "../components/Testimonies/Testimonies"
-import { MottoBanner } from "../components/MottoBanner/MottoBanner"
+import { Motto } from "../components/Motto/Motto"
 import { ShopNow } from "../components/ShopNow/ShopNow"
 
 export const LandingPage = () => {
   return (
     <>
       <Header></Header>
-      <MottoBanner></MottoBanner>
+      <Motto></Motto>
       <ShopNow></ShopNow>
       <Testimonies></Testimonies>
     </>
