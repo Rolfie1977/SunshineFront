@@ -3,7 +3,7 @@ import React from "react";
 function Header() {
 	return (
 		<div>
-			<h1>Ingas Rolf - DIN </h1>
+			<h1>Sunshine Coffee </h1>
 		</div>
 	);
 }

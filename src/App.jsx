@@ -17,7 +17,7 @@ function App() {
 
 			<Header />
 
-			<h1>hello sexy mama</h1>
+			<h1>Kaffe test</h1>
 		</div>
 	);
 }

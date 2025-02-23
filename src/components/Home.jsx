@@ -1,13 +1,4 @@
-function Home (){
-
-
-return (
-    <div>
-    Hello helloe Inga
-    
-    </div>
-
-
-)
+function Home() {
+	return <div>Hello hello</div>;
 }
-export default Home
+export default Home;
