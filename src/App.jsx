@@ -1,24 +1,26 @@
 import React from "react";
 import { Route, Routes, BrowserRouter } from "react-router-dom";
-import AppContext from "./utils/context";
-import Home from "./components/Home";
-import Header from "./components/Header";
+import { CartContextProvider } from "./utils/CartContext";
+import { MainLayout } from "./layout/MainLayout";
+import Home from "./components/Home/Home";
+import Header from "./components/Header/Header";
 
 function App() {
 	return (
-		<div>
+		<CartContextProvider>
 			<BrowserRouter>
-				<AppContext>
 					<Routes>
-						<Route path="/home" element={<Home />} />
+					<Route  path={"/"} element={<MainLayout />} >
+						<Route index element={<Home />} />
+						{/* <Route path={`/productspage`} element={<ProductsPage />} />
+						<Route path={`/accountpage`} element={<AccountPage />} />
+						<Route path={`/checkoutpage`} element={<CheckoutPage />} />
+						<Route path={`/cookiespolicypage`} element={<CookiePolicy />} />
+						<Route path={`/returnpolicypage`} element={<ReturnPolicy />} /> */}
+						</Route>
 					</Routes>
-				</AppContext>
 			</BrowserRouter>
-
-			<Header />
-
-			<h1>Kaffe test</h1>
-		</div>
+		</CartContextProvider>
 	);
 }
 
